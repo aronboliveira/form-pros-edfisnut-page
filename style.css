@@ -1,0 +1,289 @@
+@import url(./gStyle.css);
+label.form-control,
+span.form-control,
+.biBtn:is(.countAtFis),
+.form-control.tabInpProgIndPerc,
+.divLock,
+.legAtFis,
+.lockTabInd,
+.spanLock,
+#fsComorbLeg {
+  display: flex;
+}
+label.form-control:not(#fsComorbLeg),
+span.form-control:not(#fsComorbLeg),
+.biBtn:is(.countAtFis):not(#fsComorbLeg),
+.form-control.tabInpProgIndPerc:not(#fsComorbLeg),
+.divLock:not(#fsComorbLeg),
+.legAtFis:not(#fsComorbLeg),
+.lockTabInd:not(#fsComorbLeg),
+.spanLock:not(#fsComorbLeg),
+#fsComorbLeg:not(#fsComorbLeg) {
+  align-items: center;
+}
+
+label.form-control,
+span.form-control,
+.form-control.tabInpProgIndPerc,
+.divLock,
+.lockTabInd,
+.spanLock {
+  justify-content: space-between;
+}
+
+.hRot {
+  font-weight: bold;
+}
+
+.consLab,
+.divLab {
+  margin-bottom: 2vh;
+}
+
+.divLock,
+.spanLock {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.divTab,
+[class*="tab"],
+.tbodyProgCons {
+  border-width: 0.063rem;
+  border-color: rgba(128, 128, 128, 0.3);
+}
+
+[class*="tabCel"] {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.flexDiv.divRot,
+.flexDiv.flexDivProg {
+  justify-content: start;
+  column-gap: 2vh;
+}
+
+.form-control.tabInpProg,
+.form-control.tabLabProgCons,
+.form-select.lockSelect,
+#inpDiur,
+#protUrLvl {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tabLabProgCons {
+  width: 100%;
+}
+
+.msrProgCons,
+.spanLock,
+.divTab {
+  border-radius: var(--bs-border-radius);
+}
+
+.msrProgCons,
+.spanLock {
+  margin: 0;
+  padding-left: 1vw;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  box-shadow: 0.2vh 0.2vh 0.2vh grey;
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.msrProgCons.sumMsr,
+.msrProgCons.indMsr,
+.spanLock.sumMsr,
+.spanLock.indMsr {
+  border-radius: 0;
+}
+
+.numConsTextHeadCel,
+.tabCelProgCons {
+  text-align: center;
+}
+
+label {
+  font-weight: 500;
+}
+label.form-control {
+  text-align: end;
+}
+
+table,
+.lockTabInd {
+  width: 100%;
+}
+
+.btn-secondary.tabBtn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.btn-secondary.tabBtn:not(.tabBtnSum) {
+  border-radius: 0;
+}
+
+.biBtn:is(.countAtFis),
+.biBtn:is(.countComorb) {
+  padding-right: 0.125rem;
+  padding-left: 0.125rem;
+  height: 2.3vh;
+}
+.biBtn:is(.countAtFis):is(.addAtFis),
+.biBtn:is(.countAtFis):is(.addComorb),
+.biBtn:is(.countComorb):is(.addAtFis),
+.biBtn:is(.countComorb):is(.addComorb) {
+  padding-left: 0.375rem;
+}
+
+.divTab {
+  overflow: auto;
+  resize: vertical;
+}
+
+.form-control.tabInpProg:not(.tabInpProgSumDCut) {
+  min-width: 10vw;
+}
+.form-control.tabInpProgSumDCut {
+  min-width: 8ch;
+}
+.form-control.tabInpProgIndPerc {
+  width: 88%;
+}
+.form-control.tabLabProgCons {
+  min-width: 10rem;
+}
+.form-control.tabLabProg,
+.form-control.tabLabProgCons,
+.form-control.labUr {
+  border: none;
+  padding: 0;
+}
+
+.flexDiv.flexDivTab {
+  min-width: 17.5rem;
+}
+
+.hRot {
+  font-size: calc(1.275rem + 0.3vw);
+  padding-bottom: 1vh;
+}
+
+.legAtFis,
+.tabAtFis,
+.tabLegProgCons,
+label[for="inpElimUrCor"] {
+  white-space: nowrap;
+}
+
+.spanLock {
+  height: 100%;
+}
+
+.tdNum {
+  vertical-align: middle;
+}
+
+.tabAtFisRotPop {
+  overflow: auto;
+}
+
+#confirmLocId {
+  min-width: 12.5rem;
+}
+
+#protUrDiv {
+  width: 33%;
+}
+
+#spanDiur {
+  display: inline-block;
+  width: 25.4rem;
+}
+
+label[for="inpElimUrCor"] {
+  width: max-content;
+}
+
+@media screen and (max-width: 900px) {
+  table,
+  tr {
+    max-width: 90vw;
+  }
+  .flexDiv.divRot {
+    flex-direction: column;
+  }
+  .form-control.tabInpProg,
+  .form-control.tabLabProgCons,
+  #bgDiv {
+    width: 100%;
+  }
+  .tabCelComorb {
+    padding: 0;
+  }
+  .tdInpComorb {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+  #bgDiv {
+    padding: 2.5vw;
+  }
+  #spanDiur {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .flexDiv.flexDivProg:not(#divProgCons) {
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: left;
+  }
+  #divProgSels {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: left;
+  }
+  #protUrDiv {
+    width: 75%;
+  }
+}
+/* 
+
+marcadores 
+
+/* .float {
+  border-color: orange;
+}
+
+.inpAtivFis {
+  border-color: purple;
+}
+
+.inpAlimRot {
+  border-color: violet;
+}
+
+.inpLocNum {
+  border-color: blue;
+}
+
+.threeCharLongNum {
+  border-color: green;
+}
+
+/* .sevenCharLongNum {
+  border-color: yellow;
+} */
