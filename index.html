@@ -12,7 +12,7 @@
     <title>Exame Clínico — Educação Física & Nutrição</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="icon" href="./img/PROS_nut_icon.png" id="faviconpross" />
+    <link rel="icon" href="./img/PROS_Saude_Modelo1-Final.jpg" id="faviconpross" />
   </head>
   <body>
     <div id="bgDiv">
@@ -86,7 +86,7 @@
               </span>
 
               <div id="genDiv" class="gridTwoCol">
-                <span class="spanFsAnamG genSpan" id="spanFsAnamG13">
+                <span class="fsAnamGSpan genSpan" id="spanFsAnamG13">
                   <label for="genId" class="labelIdentif">Gênero:
                     <select name="genName" id="genId" class="form-select inpIdentif inpGen" data-title="genero" required>
                       <option class="optIdentif optGen" value="masculino" selected>Masculino | Homem binário</option>
@@ -99,7 +99,7 @@
                   <br />
                 </span>
     
-                <span class="spanFsAnamG genSpan" id="spanFsAnamG14">
+                <span class="fsAnamGSpan genSpan" id="spanFsAnamG14">
                   <label for="genBirthRelId" class="labelIdentif">Identidade em relação ao gênero designado na nascença:
                     <select name="genBirthRelName" id="genBirthRelId" class="form-select inpIdentif inpGen" data-title="identidade_genero_nascenca" required>
                       <option class="optIdentif optgenBirthRel" value="cis" selected>Cisgênero | Cissexual</option>
@@ -111,7 +111,7 @@
                   <br />
                 </span>
     
-                <span class="spanFsAnamG genSpan" id="spanFsAnamG15" hidden>
+                <span class="fsAnamGSpan genSpan" id="spanFsAnamG15" hidden>
                   <label for="genTransId" class="labelIdentif">Estágio da Transição Hormonal:
                     <select name="genTransName" id="genTransId" class="form-select inpIdentif inpGen" data-title="stg_transicao_hormonal" >
                       <option class="optIdentif optgenTrans" value="undefined">Indefinido</option>
@@ -124,7 +124,7 @@
                   <br />
                 </span>
     
-                <span class="spanFsAnamG genSpan" id="spanFsAnamG16" class="form-select inpIdentif" hidden>
+                <span class="fsAnamGSpan genSpan" id="spanFsAnamG16" class="form-select inpIdentif" hidden>
                   <label for="genFisAlinId" class="labelIdentif">Alinhamento de características físicas predominante:
                     <select name="genFisAlinName" id="genFisAlinId" class="form-select inpIdentif inpGen" data-title="corpo_align">
                       <option class="optIdentif optgenFisAlin" value="masculinizado">Masculinizado</option>
@@ -154,35 +154,37 @@
                   </svg>
                 </button>
             </legend>
-            <table id="tabComorb">
-              <colgroup id="tabColGrpComorb">
-                <col class="tabColComorb" id="tabColComorb1" />
-                <col class="tabColComorb" id="tabColComorb2" />
-                <col class="tabColComorb" id="tabColComorb3" />
-              </colgroup>
-              <tr class="tabRowComorb" id="tabRowComorb1">
-                <td class="tabCelComorb tabCelRowComorb1 tdNum" id="tabCelRowComorb1_1"></td>
-                <td class="tabCelComorb tabCelLeft tabCelRowComorb1 tdInpComorb" id="tabCelRowComorb1_2">Nome da Comorbidade
-                </td>
-                <td class="tabCelComorb tabCelRight tabCelRowComorb1 tdInpComorb" id="tabCelRowComorb1_3">Data de Diagnóstico
-                </td> 
-              </tr>
-              <tr class="tabRowComorb" id="tabRowComorb2">
-                <td class="tabCelComorb tabCelRowComorb2 tdNum" id="tabCelRowComorb2_1">1</td>
-                <td class="tabCelComorb tabCelLeft tabCelRowComorb2 tdInpComorb" id="tabCelRowComorb2_2">
-                  <input type="text" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_2" required/>
-                </td>
-                <td class="tabCelComorb tabCelRight tabCelRowComorb2 tdInpComorb" id="tabCelRowComorb2_3">
-                  <input type="date" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_3" required/>
-                </td>
-              </tr>
-            </table>
+            <div class="divTab">
+              <table id="tabComorb">
+                <colgroup id="tabColGrpComorb">
+                  <col class="tabColComorb" id="tabColComorb1" />
+                  <col class="tabColComorb" id="tabColComorb2" />
+                  <col class="tabColComorb" id="tabColComorb3" />
+                </colgroup>
+                <tr class="tabRowComorb" id="tabRowComorb1">
+                  <td class="tabCelComorb tabCelRowComorb1 tdNum" id="tabCelRowComorb1_1"></td>
+                  <td class="tabCelComorb tabCelLeft tabCelRowComorb1 tdInpComorb" id="tabCelRowComorb1_2">Nome da Comorbidade
+                  </td>
+                  <td class="tabCelComorb tabCelRight tabCelRowComorb1 tdInpComorb" id="tabCelRowComorb1_3">Data de Diagnóstico
+                  </td> 
+                </tr>
+                <tr class="tabRowComorb" id="tabRowComorb2">
+                  <td class="tabCelComorb tabCelRowComorb2 tdNum" id="tabCelRowComorb2_1">1</td>
+                  <td class="tabCelComorb tabCelLeft tabCelRowComorb2 tdInpComorb" id="tabCelRowComorb2_2">
+                    <input type="text" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_2" required/>
+                  </td>
+                  <td class="tabCelComorb tabCelRight tabCelRowComorb2 tdInpComorb" id="tabCelRowComorb2_3">
+                    <input type="date" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_3" required/>
+                  </td>
+                </tr>
+              </table>
+            </div>
             <br />
           </fieldset>
           <hr/>
   
           <fieldset name="fsHabRotName" id="fsHabRotId" class="fsMain">
-            <legend class="hRot" id="fsHabRotLeg">Hábitos Rotineiros &#8211 Alimentação</legend>
+            <legend class="hRot legMain" id="fsHabRotLeg">Hábitos Rotineiros &#8211 Alimentação</legend>
    
             <section class="sectionMain sectHabRot" id="sectAlimRot">
               <div class="flexDiv divRot">
@@ -239,7 +241,7 @@
               </div>
               <hr />
   
-              <h2 class="hRot">Hábitos Rotineiros &#8211 Hidratação</h2>
+              <h2 class="hRot legMain">Hábitos Rotineiros &#8211 Hidratação</h2>
               <div class="flexDiv divRot">
                 <label for="inpAguaDiaMin" class="labAlimRot labAgua">
                   Ingere quantos litros de água por dia, no mínimo?
@@ -267,7 +269,7 @@
               </div>
               <hr />
   
-              <h2 class="hRot">Hábitos Rotineiros &#8211 Excreção</h2>
+              <h2 class="hRot legMain">Hábitos Rotineiros &#8211 Excreção</h2>
               <div class="flexDiv divRot">
                 <label for="inpElimUrDiaMin" class="labAlimRot labUr labUrDia">
                   Quantas micções por dia, no mínimo?
@@ -359,7 +361,7 @@
                   <p class="msrProgCons">ml/dia</p>
                   </label>
                 </span>
-                <div id="protUrDiv">
+                <div class="form-padded" id="protUrDiv">
                   <span for="inpElimUrDiaMax" class="spanAlimRot spanbUr spanProtUr">
                     Proteinúria
                     <br />
@@ -452,7 +454,7 @@
             <div id="divAtFisRot">
   
               <span class="spanMain atvSpan" id="divLvlAtFis"><strong>Nível de Atividade Física:</strong>
-                <select class="form-select" id="selectLvlAtFis" required>
+                <select class="form-select labelIdentif" id="selectLvlAtFis" required>
                   <option value="sedentario" class="opLvlAtFis">Sedentário</option>
                   <option value="leve" class="opLvlAtFis" selected>Leve</option>
                   <option value="moderado" class="opLvlAtFis">Moderado</option>
@@ -618,7 +620,7 @@
 
               <div class="flexDiv flexDivProg" id="divProgCons">
                 <label for="selectNumCons" id="labSelectNumCons" class="consLab"> Consulta em Leitura:
-                  <select id="selectNumCons" class="form-select">
+                  <select id="selectNumCons" class="form-select consInp">
                     <option value="1" id="opCons1">1ª</option>
                     <option value="2" id="opCons2">2ª</option>
                     <option value="3" id="opCons3">3ª</option>
@@ -626,14 +628,14 @@
                 </label>
     
                 <label for="trioReadNumCons" id="labTrioReadNumCons" class="consLab"> Número inicial da Consulta em Leitura:
-                  <input type="number" class="form-control" id="trioReadNumCons" min="1" max="255" value="1">
+                  <input type="number" class="form-control consInp" id="trioReadNumCons" min="1" max="255" value="1">
                 </label>
               </div>
 
               <div class="flexDiv flexDivProg" id="divProgType">
                 <div class="divLab">
                   Tipo corporal aplicado:
-                  <select id="textBodytype" class="form-select">
+                  <select id="textBodytype" class="form-select consInp">
                     <option value="masculino">Masculino | Masculinizado</option>
                     <option value="feminino">Feminino | Feminilizado</option>
                     <option value="neutro">Neutro</option>
@@ -642,7 +644,7 @@
     
                 <div class="spanForm divLab">
                   Nível de Gordura Corporal aplicado:
-                  <span class="form-control spanSubForm">
+                  <span class="form-control spanSubForm consInp">
                     <select id="gordCorpLvl" class="form-select lockSelect">
                       <option value="abaixo" selected>Com Baixo Peso</option>
                       <option value="eutrofico">Eutrófico</option>
@@ -663,7 +665,7 @@
               <div class="flexDiv flexDivProg" id="divProgFactor">
                 <div class="divLab">
                   Fator de Nível de Atividade Física aplicado:
-                  <select id="nafType" class="form-select">
+                  <select id="nafType" class="form-select consInp">
                     <option value="sedentario">1.2</option>
                     <option value="leve" selected>1.4</option>
                     <option value="moderado">1.6</option>
@@ -674,7 +676,7 @@
 
                 <div class="divLab spanForm">
                   Fórmula aplicada para Cálculo de TMB:
-                  <span class="form-control spanSubForm">
+                  <span class="form-control spanSubForm consInp">
                     <select id="formCalcTMBType" class="form-select lockSelect">
                       <option value="harrisBenedict">Harris-Benedict</option>
                       <option value="mifflinStJeor">Mifflin-St.Jeor</option>
@@ -690,7 +692,7 @@
     
                 <div class="divLab" id="spanFactorAtleta" hidden>
                   Fator para Calcúlo de TMB em Atletas:
-                  <select class="selFactorAtletaClass form-select" id="selFactorAtleta">
+                  <select class="selFactorAtletaClass form-select consInp" id="selFactorAtleta">
                     <option value="Peso">Peso</option>
                     <option value="MLG">MLG</option>
                   </select>
@@ -1026,7 +1028,7 @@
               <hr />
 
               <div class="spanMain spanMainTabProgCons divLab" id="tabSpanDCut">Protocolo:
-                <select class="form-select selectTabProgCons" id="tabSelectDCutId" name="tabSelectDCutName" required>
+                <select class="form-select selectTabProgCons consInp" id="tabSelectDCutId" name="tabSelectDCutName" required>
                   <option value="pollock3" class="opTabProgCons opProtoc" id="opProtocJP3" selected>Jackson/Pollock 3</option>
                   <option value="pollock7" class="opTabProgCons opProtoc" id="opProtocJP7">Jackson/Pollock 7</option>
                 </select>
