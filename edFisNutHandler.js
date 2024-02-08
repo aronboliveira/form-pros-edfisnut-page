@@ -91,6 +91,7 @@ export function switchLockInputs(locksTabInd, autoFillActivation = false) {
 }
 export function getNumCol(evEl) {
     let numCol = 2;
+    console.log("EVEL ID " + evEl?.id);
     (evEl && evEl.id?.match(/[0-9]+_[0-9]+$/g)) ||
         (evEl instanceof HTMLInputElement && evEl.name?.match(/[0-9]+_[0-9]+$/g)) ||
         (evEl instanceof HTMLLabelElement && evEl.htmlFor?.match(/[0-9]+_[0-9]+$/g))
@@ -469,6 +470,8 @@ export function updatePGC(person, parentEl, numRef = 1, context = "cons") {
         if ((targInpPGC instanceof HTMLInputElement ||
             targInpPGC instanceof HTMLSelectElement) &&
             targInpPGC.type === "number") {
+            console.log("sumdcut capturado " + person.sumDCut);
+            console.log("age capturada " + person.age);
             PGC =
                 GlobalModel.parseNotNaN(person.calcPGC(person).toFixed(4), 0, "float") || 0;
             const PGCDecayArray = EdFisNutModel.evaluatePGCDecay(person, targInpPGC, PGC);
@@ -594,10 +597,13 @@ export function switchRowAtivFis(container, rowCountAtivFisRot = 3, rowCountAtiv
 }
 export function addRowAtivFis(count = 3, context = "Rot") {
     const tBodyContainer = document.getElementById(`tbodyAtFis${context}`);
+    let title = "Rotineira";
     if (context === "rot")
         context = "Rot";
     if (context === "prop")
         context = "Prop";
+    if (context === "Prop")
+        title = "Proposta";
     if (typeof context === "string" && tBodyContainer) {
         const newRow = document.createElement("tr");
         newRow.className = `tabRowAtFis${context}`;
@@ -605,15 +611,15 @@ export function addRowAtivFis(count = 3, context = "Rot") {
         newRow.innerHTML = `
     <td class="tabCelAtFis tabCelAtFis${context}" id="tabCelRowAtFis${context}${count}_1" itemprop="celAtFis${context}">${count - 1}&#41</td>
     <td class="tabCelAtFis tabCelAtFis${context} tabCelLeft" id="tabCelRowAtFis${context}${count}_2" itemprop="celAtFis${context}">
-      <input type="text" min="0" max="255" class="tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_1" itemprop="inpAtFis${context}" required />
+      <input type="text" min="0" max="255" class="tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_1" itemprop="inpAtFis${context}" data-title="Atividade_Fisica_${title}_Nome_1" required />
     <td class="tabCelAtFis tabCelAtFis${context} tabCelLeft" id="tabCelRowAtFis${context}${count}_3" itemprop="celAtFis${context}">
-      <input type="number" min="0" max="255" class="inpAtivFis tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_2" itemprop="inpAtFis${context}" required />
+      <input type="number" min="0" max="255" class="inpAtivFis tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_2" itemprop="inpAtFis${context}" data-title="Atividade_Fisica_${title}_NSemana_1" required />
     </td>
     <td class="tabCelAtFis tabCelAtFis${context}" id="tabCelRowAtFis${context}${count}_4" itemprop="celAtFis${context}">
-      <input type="number" min="0" max="255" class="tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_3" itemprop="inpAtFis${context}" required />
+      <input type="number" min="0" max="255" class="tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_3" itemprop="inpAtFis${context}" data-title="Atividade_Fisica_${title}_SessãoMin_1" required />
     </td>
     <td class="tabCelAtFis tabCelAtFis${context} tabCelRight" id="tabCelRowAtFis${context}${count}_5" itemprop="celAtFis${context}">
-      <input type="number" min="0" max="255" class="tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_4" itemprop="inpAtFis${context}" required />
+      <input type="number" min="0" max="255" class="tabInpAtFis${context} tabInpRowAtFis${context}2 form-control" id="tabInpRowAtFis${context}${count}_4" itemprop="inpAtFis${context}" data-title="Atividade_Fisica_${title}_Meses_1" required />
     </td>
       `;
         tBodyContainer.appendChild(newRow);
@@ -657,10 +663,10 @@ export function switchRowComorb(comorbContainer, rowCountComorb = 3) {
         newComorbRow.innerHTML = `
     <td class="tabCelComorb tabCelRowComorb${rowCountComorb}" id="tabCelRowComorb${rowCountComorb}_1">${rowCountComorb - 1}</td>
     <td class="tabCelComorb tabCelLeft tabCelRowComorb${rowCountComorb}" id="tabCelRowComorb${rowCountComorb}_2">
-      <input type="text" class="tabInpComorb tabInpRowComorb${rowCountComorb} form-control" id="tablInpRowComorb${rowCountComorb}_2" required />
+      <input type="text" class="tabInpComorb tabInpRowComorb${rowCountComorb} form-control" id="tablInpRowComorb${rowCountComorb}_2" data-title="Comorbidade_Nome_${rowCountComorb}" required />
     </td>
     <td class="tabCelComorb tabCelRight tabCelRowComorb${rowCountComorb}" id="tabCelRowComorb${rowCountComorb}_3">
-      <input type="date" class="tabInpComorb tabInpRowComorb${rowCountComorb} form-control" id="tablInpRowComorb${rowCountComorb}_3" required />
+      <input type="date" class="tabInpComorb tabInpRowComorb${rowCountComorb} form-control" id="tablInpRowComorb${rowCountComorb}_3" data-title="Comorbidade_Data_${rowCountComorb}" required />
     </td>
     `;
         parentTab.appendChild(newComorbRow);
@@ -886,6 +892,29 @@ export function switchNumConsTitles(consTitles, trioEl, numTitledCons = 1, numTa
         }
         for (let i = 0; i < consTitles.length; i++)
             consTitles[i].textContent = `${trioNums[i] || `${1 + i}`}ª Consulta`;
+        Array.from(document.getElementById("fsSubProgConsInd")?.querySelectorAll("table") ??
+            [])
+            ?.map(table => [
+            ...Array.from(table.querySelectorAll("input")),
+            ...Array.from(table.querySelectorAll("textarea")),
+            ...Array.from(table.querySelectorAll("select")),
+        ])
+            ?.flat(1)
+            .forEach(input => {
+            if ((input instanceof HTMLInputElement ||
+                input instanceof HTMLTextAreaElement ||
+                input instanceof HTMLSelectElement) &&
+                input.dataset.title &&
+                /[0-9]/g.test(input.dataset.title)) {
+                const indexNum = input.dataset.title.search(/[0-9]/g);
+                input.dataset.title =
+                    input.dataset.title.slice(0, indexNum) +
+                        `${0 + trioEl.value}` +
+                        input.dataset.title.slice(indexNum + 1);
+            }
+            else
+                ErrorHandler.inputNotFound(input, `input id ${input?.id}`, extLine(new Error()));
+        });
     }
     else
         ErrorHandler.multipleElementsNotFound(extLine(new Error()), "arguments for switchNumConsTitles", `${JSON.stringify(consTitles) || null}`, trioEl, numTitledCons, numTabs);

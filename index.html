@@ -24,7 +24,7 @@
             <p><strong>PROSSaúde &#8211 UFRJ</strong></p>
           </div>
           <span class="control flexSpan" id="spanHFlex">
-            <input type="date" class="form-control" id="dateHeader" placeholder="Date" data-title="data_cabecalho" required>
+            <input type="date" class="form-control" id="dateHeader" placeholder="Date" data-title="Data_cabecalho" required>
             <button
             type="button"
             class="datBtn atualTratBtn btn btn-secondary"
@@ -38,10 +38,10 @@
       <main>
         <div class="switchDiv">
           <span class="form-switch spanLeft" id="autofillDiv">
-            <input type="checkbox" class="deActBtn form-check-input" role="switch" id="autoFillBtn" data-title="autofill" checked /> <strong>Cálculo Automático</strong>
+            <input type="checkbox" class="deActBtn form-check-input" role="switch" id="autoFillBtn" data-title="Autofill_check" checked /> <strong>Cálculo Automático</strong>
           </span>
           <span class="form-switch spanRight" id="autocorrectDiv">
-            <input type="checkbox" class="deActBtn form-check-input" role="switch" id="deactAutocorrectBtnPac" data-title="autocorrecao" checked /> <strong>Autocorreção</strong>
+            <input type="checkbox" class="deActBtn form-check-input" role="switch" id="deactAutocorrectBtnPac" data-title="Autocorrecao_check" checked /> <strong>Autocorreção</strong>
           </span>
         </div>
         <hr />
@@ -54,20 +54,20 @@
 
                 <span class="fsAnamGSpan col" id="fsAnamGSpan1">
                   <label for="firstNameId" class="labelIdentif">Primeiro Nome (Simples ou Composto):
-                    <input type="text" name="firstNameName" id="firstNameId" class="form-control autocorrect inpIdentif" autocomplete="given-name" data-title="primeiro_nome" required />
+                    <input type="text" name="firstNameName" id="firstNameId" class="form-control autocorrect inpIdentif" autocomplete="given-name" data-title="Primeiro_nome" required />
                   </label>
                   <br />
                 </span>
                 <span class="fsAnamGSpan col" id="fsAnamGSpan2">
                   <label for="additionalNameId"  class="labelIdentif">Sobrenome&#40s&#41 do Meio, se presente&#40s&#41:
-                    <input type="text" name="additionalNameName" id="additionalNameId" class="form-control autocorrect inpIdentif" data-title="nome_do_meio" autocomplete="additional-name" />
+                    <input type="text" name="additionalNameName" id="additionalNameId" class="form-control autocorrect inpIdentif" data-title="Nome_do_meio" autocomplete="additional-name" />
                   </label>
                   <br />
                 </span>
     
                 <span class="fsAnamGSpan col" id="fsAnamGSpan3">
                   <label for="familyNameId" class="labelIdentif">Último Sobrenome:
-                    <input type="text" name="familyNameName" id="familyNameId" class="form-control autocorrect inpIdentif" data-title="ultimo_nome" autocomplete="family-name" required />
+                    <input type="text" name="familyNameName" id="familyNameId" class="form-control autocorrect inpIdentif" data-title="Ultimo_nome" autocomplete="family-name" required />
                   </label>
                   <br />  
                 </span>
@@ -75,20 +75,20 @@
 
               <span class="fsAnamGSpan col" id="fsAnamGSpan4">
                 <label for="socialNameId" class="labelIdentif">Nome Social:
-                  <input type="text" name="socialNameName" id="socialNameId" class="form-control autocorrect inpIdentif" data-title="nome_social" autocomplete="given-name"/>
+                  <input type="text" name="socialNameName" id="socialNameId" class="form-control autocorrect inpIdentif" data-title="Nome_social" autocomplete="given-name"/>
                 </label>
               </span>
 
               <span class="fsAnamGSpan" id="fsAnamGSpan12">
                 <label for="dateAgeId" class="labelIdentif">Idade:
-                  <input type="number" name="dateAgeName" id="dateAgeId" class="form-control inpIdentif" min="0" max="255" data-title="idade" required>
+                  <input type="number" name="dateAgeName" id="dateAgeId" class="form-control inpIdentif" min="0" max="255" data-title="Idade" required>
                 </label>
               </span>
 
               <div id="genDiv" class="gridTwoCol">
                 <span class="fsAnamGSpan genSpan" id="spanFsAnamG13">
                   <label for="genId" class="labelIdentif">Gênero:
-                    <select name="genName" id="genId" class="form-select inpIdentif inpGen" data-title="genero" required>
+                    <select name="genName" id="genId" class="form-select inpIdentif inpGen" data-title="Genero" required>
                       <option class="optIdentif optGen" value="masculino" selected>Masculino | Homem binário</option>
                       <option class="optIdentif optGen" value="feminino">Feminino | Mulher binária</option>
                       <option class="optIdentif optGen" value="naoBinario">Não-Binário</option>
@@ -101,7 +101,7 @@
     
                 <span class="fsAnamGSpan genSpan" id="spanFsAnamG14">
                   <label for="genBirthRelId" class="labelIdentif">Identidade em relação ao gênero designado na nascença:
-                    <select name="genBirthRelName" id="genBirthRelId" class="form-select inpIdentif inpGen" data-title="identidade_genero_nascenca" required>
+                    <select name="genBirthRelName" id="genBirthRelId" class="form-select inpIdentif inpGen" data-title="Identidade_genero_nascenca" required>
                       <option class="optIdentif optgenBirthRel" value="cis" selected>Cisgênero | Cissexual</option>
                       <option class="optIdentif optgenBirthRel" value="trans">Transgênero | Transsexual</option>
                       <option class="optIdentif optgenBirthRel" value="outros">Outros</option>
@@ -113,7 +113,7 @@
     
                 <span class="fsAnamGSpan genSpan" id="spanFsAnamG15" hidden>
                   <label for="genTransId" class="labelIdentif">Estágio da Transição Hormonal:
-                    <select name="genTransName" id="genTransId" class="form-select inpIdentif inpGen" data-title="stg_transicao_hormonal" >
+                    <select name="genTransName" id="genTransId" class="form-select inpIdentif inpGen" data-title="Stg_transicao_hormonal" >
                       <option class="optIdentif optgenTrans" value="undefined">Indefinido</option>
                       <option class="optIdentif optgenTrans" value="no">Não está em transição</option>
                       <option class="optIdentif optgenTrans" value="inicial">Inicial</option>
@@ -126,7 +126,7 @@
     
                 <span class="fsAnamGSpan genSpan" id="spanFsAnamG16" class="form-select inpIdentif" hidden>
                   <label for="genFisAlinId" class="labelIdentif">Alinhamento de características físicas predominante:
-                    <select name="genFisAlinName" id="genFisAlinId" class="form-select inpIdentif inpGen" data-title="corpo_align">
+                    <select name="genFisAlinName" id="genFisAlinId" class="form-select inpIdentif inpGen" data-title="Corpo_alinhamento">
                       <option class="optIdentif optgenFisAlin" value="masculinizado">Masculinizado</option>
                       <option class="optIdentif optgenFisAlin" value="feminilizado">Feminilizado</option>
                       <option class="optIdentif optgenFisAlin" value="neutro">Indeterminado | Neutro</option>
@@ -171,10 +171,10 @@
                 <tr class="tabRowComorb" id="tabRowComorb2">
                   <td class="tabCelComorb tabCelRowComorb2 tdNum" id="tabCelRowComorb2_1">1</td>
                   <td class="tabCelComorb tabCelLeft tabCelRowComorb2 tdInpComorb" id="tabCelRowComorb2_2">
-                    <input type="text" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_2" required/>
+                    <input type="text" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_2" data-title="Comorbidade_Nome_1" required/>
                   </td>
                   <td class="tabCelComorb tabCelRight tabCelRowComorb2 tdInpComorb" id="tabCelRowComorb2_3">
-                    <input type="date" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_3" required/>
+                    <input type="date" class="tabInpComorb tabInpRowComorb2 form-control" id="tablInpRowComorb2_3" data-title="Comorbidade_Data_1" required/>
                   </td>
                 </tr>
               </table>
@@ -196,6 +196,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpRef inpRefDia"
                     id="inpRefDiaMin"
+                    data-title="Refeicoes_diarias_minimo"
                     required
                   />
                 </label>
@@ -208,6 +209,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpRef inpRefDia"
                     id="inpRefDiaMax"
+                    data-title="Refeicoes_diarias_maximo"
                     required
                   />
                 </label>
@@ -222,6 +224,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpRef inpRefCompDia"
                     id="inpRefCompDiaMin"
+                    data-title="Refeicoes_completas_diarias_minimo"
                     required
                   />
                 </label>
@@ -234,6 +237,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpRef inpRefCompDia"
                     id="inpRefCompDiaMax"
+                    data-title="Refeicoes_completas_diarias_maximo"
                     required
                   />
                 </label>
@@ -251,6 +255,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpAgua float sevenCharLongNum"
                     id="inpAguaDiaMin"
+                    data-title="L_agua_diario_minimo"
                     required
                   />
                 </label>
@@ -263,6 +268,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpAgua float sevenCharLongNum"
                     id="inpAguaDiaMax"
+                    data-title="L_agua_diario_maximo"
                     required
                   />
                 </label>
@@ -279,6 +285,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpUr inpUrDia"
                     id="inpElimUrDiaMin"
+                    data-title="Miccoes_diarias_minimo"
                     required
                   />
                 </label>
@@ -291,6 +298,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpUr inpUrDia"
                     id="inpElimUrDiaMax"
+                    data-title="Miccoes_diarias_maximo"
                     required
                   />
                 </label>
@@ -305,6 +313,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpUr inpUrInterval float sevenCharLongNum"
                     id="inpElimUrIntervaloMin"
+                    data-title="Miccoes_intervalo_minimo"
                     required
                   />
                 </label>
@@ -317,6 +326,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpUr inpUrInterval float sevenCharLongNum"
                     id="inpElimUrIntervaloMax"
+                    data-title="Miccoes_intervalo_maximo"
                     required
                   />
                 </label>
@@ -330,6 +340,7 @@
                     list="corUr"
                     class="form-control inpAlimRot inpUr"
                     id="inpElimUrCor"
+                    data-title="Urina_coloracao"
                     required
                   />
                   <datalist id="corUr">
@@ -357,6 +368,7 @@
                     max="9999"
                     class="form-control inpAlimRot inpUr float"
                     id="inpDiur"
+                    data-title="Diurese"
                   />
                   <p class="msrProgCons">ml/dia</p>
                   </label>
@@ -370,6 +382,7 @@
                       class="inpAlimRot inpUr inpUrRadio"
                       id="CpbinpProtUrRadioYes"
                       name="inpProtUrRadio"
+                      data-title="Proteinuria_Sim"
                     />
                     <label for="CpbinpProtUrRadioYes" id="labCpbinpProtUrRadioYes">Sim
                     <input
@@ -377,19 +390,20 @@
                       class="inpAlimRot inpUr inpUrRadio"
                       id="CpbinpProtUrRadioNo"
                       name="inpProtUrRadio"
+                      data-title="Proteinuria_Nao"
                     />
                     <label for="CpbinpProtUrRadioNo" id="labCpbinpProtUrRadioNo">Não
                   </span>
                   <br />
                   <div class="divMain" id="divAddProtUr">
-                    <input type="radio" name="protUrTypeRadio" id="protUrOrtId" class="cpbOp opProtUr" > Ortostática
+                    <input type="radio" name="protUrTypeRadio" id="protUrOrtId" class="cpbOp opProtUr" data-title="Proteinuria_Ortostatica" > Ortostática
                     <br />
-                    <input type="radio" name="protUrTypeRadio" id="protUrTrId" class="cpbOp opProtUr" > Transitória
+                    <input type="radio" name="protUrTypeRadio" id="protUrTrId" class="cpbOp opProtUr" data-title="Proteinuria_Transitoria"> Transitória
                     <br />
-                    <input type="radio" name="protUrTypeRadio" id="protUrPersistId" class="cpbOp opProtUr" > Persistente
+                    <input type="radio" name="protUrTypeRadio" id="protUrPersistId" class="cpbOp opProtUr" data-title="Proteinuria_Persistente"> Persistente
                     <br />
                     <label for="protUrLvl" id="labProtUrLvl" class="form-control labUr">
-                      <input type="number" id="protUrLvl" class="form-control opProtUr" />
+                      <input type="number" id="protUrLvl" class="form-control opProtUr" data-title="Proteinuria_mg/dL" />
                       <p class="msrProgCons">mg/dL</p>
                     </label>
                   </div>
@@ -405,6 +419,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpEv inpEvDia"
                     id="inpElimEvDiaMin"
+                    data-title="Evacuacao_diaria_minimo"
                     required
                   />
                 </label>
@@ -417,6 +432,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpEv inpEvDia"
                     id="inpElimEvDiaMax"
+                    data-title="Evacuacao_diaria_maximo"
                     required
                   />
                 </label>
@@ -431,6 +447,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpEv inpEvIntervalo float sevenCharLongNum"
                     id="inpElimEvIntervaloMin"
+                    class="Evacuacao_intervalo_minimo"
                     required
                   />
                 </label>
@@ -443,6 +460,7 @@
                     max="65535"
                     class="form-control inpAlimRot inpEv inpEvIntervalo float sevenCharLongNum"
                     id="inpElimEvIntervaloMax"
+                    class="Evacuacao_intervalo_maximo"
                     required
                   />
                 </label>
@@ -454,7 +472,7 @@
             <div id="divAtFisRot">
   
               <span class="spanMain atvSpan" id="divLvlAtFis"><strong>Nível de Atividade Física:</strong>
-                <select class="form-select labelIdentif" id="selectLvlAtFis" required>
+                <select class="form-select labelIdentif" id="selectLvlAtFis" data-title="Nivel_atividade_fisica" required>
                   <option value="sedentario" class="opLvlAtFis">Sedentário</option>
                   <option value="leve" class="opLvlAtFis" selected>Leve</option>
                   <option value="moderado" class="opLvlAtFis">Moderado</option>
@@ -519,15 +537,15 @@
                     <tr class="tabRowAtFis tabRowAtFisRot" id="tabRowAtFis tabRowAtFisRotId2" itemprop="rowAtFisRot">
                       <td class="tabCelAtFis tabCelAtFisRot" id="tabCelRowAtFisRot2_1" itemprop="celAtFisRot">1&#41;</td>
                       <td class="tabCelAtFis tabCelAtFisRot tabCelLeft" id="tabCelRowAtFisRot2_2" itemprop="celAtFisRot">
-                        <input type="text" min="0" max="65535" class="tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_1" itemprop="inpAtFisRot" />
+                        <input type="text" min="0" max="65535" class="tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_1" itemprop="inpAtFisRot" data-title="Atividade_Fisica_Rotineira_Nome_1" required />
                       <td class="tabCelAtFis tabCelAtFisRot tabCelLeft" id="tabCelRowAtFisRot2_3" itemprop="celAtFisRot">
-                        <input type="number" min="0" max="65535" class="inpAtivFis tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_2" itemprop="inpAtFisRot" />
+                        <input type="number" min="0" max="65535" class="inpAtivFis tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_2" itemprop="inpAtFisRot" data-title="Atividade_Fisica_Rotineira_NSemana_1" required />
                       </td>
                       <td class="tabCelAtFis tabCelAtFisRot" id="tabCelRowAtFisRot2_4" itemprop="celAtFisRot">
-                        <input type="number" min="0" max="65535" class="tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_3 sevenCharLongNum" itemprop="inpAtFisRot" />
+                        <input type="number" min="0" max="65535" class="tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_3 sevenCharLongNum" itemprop="inpAtFisRot" data-title="Atividade_Fisica_Rotineira_SessãoMin_1" required />
                       </td>
                       <td class="tabCelAtFis tabCelAtFisRot tabCelRight" id="tabCelRowAtFisRot2_5" itemprop="celAtFisRot">
-                        <input type="number" min="0" max="65535" class="tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_4 sevenCharLongNum" itemprop="inpAtFisRot" />
+                        <input type="number" min="0" max="65535" class="tabInpAtFisRot tabInpRowAtFisRot2 form-control" id="tabInpRowAtFisRot2_4 sevenCharLongNum" itemprop="inpAtFisRot" data-title="Atividade_Fisica_Rotineira_Meses_1" required />
                       </td>
                     </tr>
                   </tbody>
@@ -593,15 +611,15 @@
                     <tr class="tabRowAtFis tabRowAtFisProp" id="tabRowAtFis tabRowAtFisPropId2" itemprop="rowAtFisProp">
                       <td class="tabCelAtFis tabCelAtFisProp" id="tabCelRowAtFisProp2_1" itemprop="celAtFisProp">1&#41;</td>
                       <td class="tabCelAtFis tabCelAtFisProp tabCelLeft" id="tabCelRowAtFisProp2_2" itemprop="celAtFisProp">
-                        <input type="text" min="0" max="65535" class="tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_1" itemprop="inpAtFisProp" required />
+                        <input type="text" min="0" max="65535" class="tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_1" itemprop="inpAtFisProp" data-title="Atividade_Fisica_Proposta_Nome_1" required />
                       <td class="tabCelAtFis tabCelAtFisProp tabCelLeft" id="tabCelRowAtFisProp2_3" itemprop="celAtFisProp">
-                        <input type="number" min="0" max="65535" class="inpAtivFis tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_2" itemprop="inpAtFisProp" required />
+                        <input type="number" min="0" max="65535" class="inpAtivFis tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_2" itemprop="inpAtFisProp" data-title="Atividade_Fisica_Proposta_NSemana_1" required />
                       </td>
                       <td class="tabCelAtFis tabCelAtFisProp" id="tabCelRowAtFisProp2_4" itemprop="celAtFisProp">
-                        <input type="number" min="0" max="65535" class="tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_3 sevenCharLongNum" itemprop="inpAtFisProp" required />
+                        <input type="number" min="0" max="65535" class="tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_3 sevenCharLongNum" itemprop="inpAtFisProp" data-title="Atividade_Fisica_Proposta_SessãoMin_1" required />
                       </td>
                       <td class="tabCelAtFis tabCelAtFisProp tabCelRight" id="tabCelRowAtFisProp2_5" itemprop="celAtFisProp">
-                        <input type="number" min="0" max="65535" class="tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_4 sevenCharLongNum" itemprop="inpAtFisProp" required />
+                        <input type="number" min="0" max="65535" class="tabInpAtFisProp tabInpRowAtFisProp2 form-control" id="tabInpRowAtFisProp2_4 sevenCharLongNum" itemprop="inpAtFisProp" data-title="Atividade_Fisica_Proposta_Meses_1" required />
                       </td>
                     </tr>
                   </tbody>
@@ -620,7 +638,7 @@
 
               <div class="flexDiv flexDivProg" id="divProgCons">
                 <label for="selectNumCons" id="labSelectNumCons" class="consLab"> Consulta em Leitura:
-                  <select id="selectNumCons" class="form-select consInp">
+                  <select id="selectNumCons" class="form-select consInp" data-title="Consulta_lida">
                     <option value="1" id="opCons1">1ª</option>
                     <option value="2" id="opCons2">2ª</option>
                     <option value="3" id="opCons3">3ª</option>
@@ -628,14 +646,14 @@
                 </label>
     
                 <label for="trioReadNumCons" id="labTrioReadNumCons" class="consLab"> Número inicial da Consulta em Leitura:
-                  <input type="number" class="form-control consInp" id="trioReadNumCons" min="1" max="255" value="1">
+                  <input type="number" class="form-control consInp" id="trioReadNumCons" min="1" max="255" value="1" data-title="Numero_Inicial_Consulta" />
                 </label>
               </div>
 
               <div class="flexDiv flexDivProg" id="divProgType">
                 <div class="divLab">
                   Tipo corporal aplicado:
-                  <select id="textBodytype" class="form-select consInp">
+                  <select id="textBodytype" class="form-select consInp" data-title="Tipo_corporal_genero">
                     <option value="masculino">Masculino | Masculinizado</option>
                     <option value="feminino">Feminino | Feminilizado</option>
                     <option value="neutro">Neutro</option>
@@ -645,7 +663,7 @@
                 <div class="spanForm divLab">
                   Nível de Gordura Corporal aplicado:
                   <span class="form-control spanSubForm consInp">
-                    <select id="gordCorpLvl" class="form-select lockSelect">
+                    <select id="gordCorpLvl" class="form-select lockSelect" data-title="Nivel_Gordura_Corporal">
                       <option value="abaixo" selected>Com Baixo Peso</option>
                       <option value="eutrofico">Eutrófico</option>
                       <option value="sobrepeso">Com Sobrepeso &#40;não Obeso&#41;</option>
@@ -665,7 +683,7 @@
               <div class="flexDiv flexDivProg" id="divProgFactor">
                 <div class="divLab">
                   Fator de Nível de Atividade Física aplicado:
-                  <select id="nafType" class="form-select consInp">
+                  <select id="nafType" class="form-select consInp" data-title="Fator_Nivel_Atividade">
                     <option value="sedentario">1.2</option>
                     <option value="leve" selected>1.4</option>
                     <option value="moderado">1.6</option>
@@ -677,7 +695,7 @@
                 <div class="divLab spanForm">
                   Fórmula aplicada para Cálculo de TMB:
                   <span class="form-control spanSubForm consInp">
-                    <select id="formCalcTMBType" class="form-select lockSelect">
+                    <select id="formCalcTMBType" class="form-select lockSelect" data-title="Formula_TMB">
                       <option value="harrisBenedict">Harris-Benedict</option>
                       <option value="mifflinStJeor">Mifflin-St.Jeor</option>
                       <option value="tinsley">Tinsley</option>
@@ -692,7 +710,7 @@
     
                 <div class="divLab" id="spanFactorAtleta" hidden>
                   Fator para Calcúlo de TMB em Atletas:
-                  <select class="selFactorAtletaClass form-select consInp" id="selFactorAtleta">
+                  <select class="selFactorAtletaClass form-select consInp" id="selFactorAtleta" data-title="Fator_TMB_Atleta">
                     <option value="Peso">Peso</option>
                     <option value="MLG">MLG</option>
                   </select>
@@ -702,7 +720,7 @@
             </div>
             <hr />
 
-            <fieldset class="fsSub" name="fsSubProgConsName" id="fsProgConsId">
+            <fieldset class="fsSub" name="fsSubProgConsName" id="fsSubProgConsId">
 
               <div class="divTab" id="divTabSVi">
                 <table class="tabProgCons" id="tabProgSVi" itemscope>
@@ -732,19 +750,19 @@
                       <th class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi2_1" itemprop="celSVi">PA</th>
                       <td class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi2_2" itemprop="celSVi">
                         <label for="tabInpRowProgSVi2_2" class="form-control tabLabProg tabLabProgCons tabLabProgSvi tabLabRowProgSVi2" id="tabLabRowProgSVi2_2" itempro="celLabSvi">
-                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi2_2" itemprop="celValueSvi" required />
+                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi2_2" itemprop="celValueSvi" data-title="PA_1_Consulta" required />
                           <p class="msrProgCons">mmHg</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi2_3" itemprop="celSVi">
                         <label for="tabInpRowProgSVi2_3" class="form-control tabLabProg tabLabProgSvi tabLabRowProgSVi2" id="tabLabRowProgSVi2_3" itempro="celLabSvi">
-                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi2_3" itemprop="celValueSvi" />
+                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi2_3" itemprop="celValueSvi" data-title="PA_2_Consulta" />
                           <p class="msrProgCons">mmHg</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi2_4" itemprop="celSVi">
                         <label for="tabInpRowProgSVi2_4" class="form-control tabLabProg tabLabProgSvi tabLabRowProgSVi2" id="tabLabRowProgSVi2_4" itempro="celLabSvi">
-                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi2_4" itemprop="celValueSvi" />
+                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi2_4" itemprop="celValueSvi" data-title="PA_3_Consulta" />
                           <p class="msrProgCons">mmHg</p>
                         </label>
                       </td>
@@ -753,19 +771,19 @@
                       <th class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi3_1" itemprop="celSVi">FC</th>
                       <td class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi3_2" itemprop="celSVi">
                         <label for="tabInpRowProgSVi3_2" class="form-control tabLabProg tabLabProgSvi tabLabRowProgSVi2" id="tabLabRowProgSVi3_2" itempro="celLabSvi">
-                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi3_2" itemprop="celValueSvi" required />
+                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi3_2" itemprop="celValueSvi" data-title="FC_1_Consulta" required />
                           <p class="msrProgCons">bpm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi3_3" itemprop="celSVi">
                         <label for="tabInpRowProgSVi3_3" class="form-control tabLabProg tabLabProgSvi tabLabRowProgSVi2" id="tabLabRowProgSVi3_3" itempro="celLabSvi">
-                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi3_3" itemprop="celValueSvi" />
+                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi3_3" itemprop="celValueSvi" data-title="FC_2_Consulta" />
                           <p class="msrProgCons">mmHg</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelProgSvi tabCelRowProgSVi2" id="tabCelRowProgSVi3_4" itemprop="celSVi">
                         <label for="tabInpRowProgSVi3_4" class="form-control tabLabProg tabLabProgSvi tabLabRowProgSVi2" id="tabLabRowProgSVi3_4" itempro="celLabSvi">
-                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi3_4" itemprop="celValueSvi" />
+                          <input type="number" min="0" max="65535" class="form-control tabInpProg tabInpProgSVi tabInpRowProgSVi2" id="tabInpRowProgSVi3_4" itemprop="celValueSvi" data-title="FC_3_Consulta" />
                           <p class="msrProgCons">mmHg</p>
                         </label>
                       </td>
@@ -806,19 +824,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt2" id="tabCelRowMedAnt2_1" itemprop="celMedAnt">Peso</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt2" id="tabCelRowMedAnt2_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt2_2" class="form-control tabLabProgCons tabLabRowMedAnt2" id="tabLabRowMedAnt2_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt2 inpWeight float sevenCharLongNum" id="tabInpRowMedAnt2_2" min="0" max="65535" value="70" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt2 inpWeight float sevenCharLongNum" id="tabInpRowMedAnt2_2" min="0" max="65535" value="70" data-title="Peso_1_Consulta" required />
                           <p class="msrProgCons">kg</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt2" id="tabCelRowMedAnt2_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt2_3" class="form-control tabLabProgCons tabLabRowMedAnt2" id="tabLabRowMedAnt2_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt2 inpWeight float sevenCharLongNum" id="tabInpRowMedAnt2_3" min="0" max="65535" value="30"/>
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt2 inpWeight float sevenCharLongNum" id="tabInpRowMedAnt2_3" min="0" max="65535" value="30" data-title="Peso_2_Consulta" />
                           <p class="msrProgCons">kg</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt2" id="tabCelRowMedAnt2_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt2_4" class="form-control tabLabProgCons tabLabRowMedAnt2" id="tabLabRowMedAnt2_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt2 inpWeight float sevenCharLongNum" id="tabInpRowMedAnt2_4" min="0" max="65535" value="200"/>
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt2 inpWeight float sevenCharLongNum" id="tabInpRowMedAnt2_4" min="0" max="65535" value="200" data-title="Peso_3_Consulta" />
                           <p class="msrProgCons">kg</p>
                         </label>
                       </td>
@@ -828,19 +846,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt3" id="tabCelRowMedAnt3_1" itemprop="celMedAnt">Altura</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt3" id="tabCelRowMedAnt3_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt3_2" class="form-control tabLabProgCons tabLabRowMedAnt3" id="tabLabRowMedAnt3_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt3 inpHeight float sevenCharLongNum" id="tabInpRowMedAnt3_2" min="0" max="65535" value="2" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt3 inpHeight float sevenCharLongNum" id="tabInpRowMedAnt3_2" min="0" max="65535" value="2" data-title="Altura_1_Consulta" required />
                           <p class="msrProgCons">m</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt3" id="tabCelRowMedAnt3_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt3_3" class="form-control tabLabProgCons tabLabRowMedAnt3" id="tabLabRowMedAnt3_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt3 inpHeight float sevenCharLongNum" id="tabInpRowMedAnt3_3" min="0" max="65535" value="1"/>
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt3 inpHeight float sevenCharLongNum" id="tabInpRowMedAnt3_3" min="0" max="65535" value="1" data-title="Altura_2_Consulta" />
                           <p class="msrProgCons">m</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt3" id="tabCelRowMedAnt3_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt3_4" class="form-control tabLabProgCons tabLabRowMedAnt3" id="tabLabRowMedAnt3_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt3 inpHeight float sevenCharLongNum" id="tabInpRowMedAnt3_4" min="0" max="65535" value="1.8"/>
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt3 inpHeight float sevenCharLongNum" id="tabInpRowMedAnt3_4" min="0" max="65535" value="1.8" data-title="Altura_3_Consulta" />
                           <p class="msrProgCons">m</p>
                         </label>
                       </td>
@@ -850,19 +868,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt4" id="tabCelRowMedAnt4_1" itemprop="celMedAnt">Tórax</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt4" id="tabCelRowMedAnt4_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt4_2" class="form-control tabLabProgCons tabLabRowMedAnt4" id="tabLabRowMedAnt4_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt4 float sevenCharLongNum" id="tabInpRowMedAnt4_2" min="0" max="65535" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt4 float sevenCharLongNum" id="tabInpRowMedAnt4_2" min="0" max="65535" data-title="Torax_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt4" id="tabCelRowMedAnt4_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt4_3" class="form-control tabLabProgCons tabLabRowMedAnt4" id="tabLabRowMedAnt4_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt4 float sevenCharLongNum" id="tabInpRowMedAnt4_3" min="0" max="65535" />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt4 float sevenCharLongNum" id="tabInpRowMedAnt4_3" min="0" max="65535" data-title="Torax_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt4" id="tabCelRowMedAnt4_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt4_4" class="form-control tabLabProgCons tabLabRowMedAnt4" id="tabLabRowMedAnt4_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt4 float sevenCharLongNum" id="tabInpRowMedAnt4_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt4 float sevenCharLongNum" id="tabInpRowMedAnt4_4" min="0" max="65535" data-title="Torax_3_Consulta"  />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -872,19 +890,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt5" id="tabCelRowMedAnt5_1" itemprop="celMedAnt">Cintura</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt5" id="tabCelRowMedAnt5_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt5_2" class="form-control tabLabProgCons tabLabRowMedAnt5" id="tabLabRowMedAnt5_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt5 float sevenCharLongNum" id="tabInpRowMedAnt5_2" min="0" max="65535" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt5 float sevenCharLongNum" id="tabInpRowMedAnt5_2" min="0" max="65535" data-title="Cintura_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt5" id="tabCelRowMedAnt5_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt5_3" class="form-control tabLabProgCons tabLabRowMedAnt5" id="tabLabRowMedAnt5_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt5 float sevenCharLongNum" id="tabInpRowMedAnt5_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt5 float sevenCharLongNum" id="tabInpRowMedAnt5_3" min="0" max="65535" data-title="Cintura_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt5" id="tabCelRowMedAnt5_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt5_4" class="form-control tabLabProgCons tabLabRowMedAnt5" id="tabLabRowMedAnt5_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt5 float sevenCharLongNum" id="tabInpRowMedAnt5_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt5 float sevenCharLongNum" id="tabInpRowMedAnt5_4" min="0" max="65535" data-title="Cintura_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -894,19 +912,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt6" id="tabCelRowMedAnt6_1" itemprop="celMedAnt">Quadril</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt6" id="tabCelRowMedAnt6_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt6_2" class="form-control tabLabProgCons tabLabRowMedAnt6" id="tabLabRowMedAnt6_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt6 float sevenCharLongNum" id="tabInpRowMedAnt6_2" min="0" max="65535" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt6 float sevenCharLongNum" id="tabInpRowMedAnt6_2" min="0" max="65535" data-title="Quadril_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt6" id="tabCelRowMedAnt6_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt6_3" class="form-control tabLabProgCons tabLabRowMedAnt6" id="tabLabRowMedAnt6_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt6 float sevenCharLongNum" id="tabInpRowMedAnt6_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt6 float sevenCharLongNum" id="tabInpRowMedAnt6_3" min="0" max="65535" data-title="Quadril_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td  class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt6" id="tabCelRowMedAnt6_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt6_4" class="form-control tabLabProgCons tabLabRowMedAnt6" id="tabLabRowMedAnt6_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt6 float sevenCharLongNum" id="tabInpRowMedAnt6_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt6 float sevenCharLongNum" id="tabInpRowMedAnt6_4" min="0" max="65535" data-title="Quadril_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -916,19 +934,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt7" id="tabCelRowMedAnt7_1" itemprop="celMedAnt">Cintura × Quadril</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt7" id="tabCelRowMedAnt7_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt7_2" class="form-control tabLabProgCons tabLabRowMedAnt7" id="tabLabRowMedAnt7_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt7 float sevenCharLongNum" id="tabInpRowMedAnt7_2" min="0" max="65535" required  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt7 float sevenCharLongNum" id="tabInpRowMedAnt7_2" min="0" max="65535" data-title="Cintura_×_Quadril_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt7" id="tabCelRowMedAnt7_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt7_3" class="form-control tabLabProgCons tabLabRowMedAnt7" id="tabLabRowMedAnt7_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt7 float sevenCharLongNum" id="tabInpRowMedAnt7_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt7 float sevenCharLongNum" id="tabInpRowMedAnt7_3" min="0" max="65535" data-title="Cintura_×_Quadril_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt7" id="tabCelRowMedAnt7_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt7_4" class="form-control tabLabProgCons tabLabRowMedAnt7" id="tabLabRowMedAnt7_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt7 float sevenCharLongNum" id="tabInpRowMedAnt7_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt7 float sevenCharLongNum" id="tabInpRowMedAnt7_4" min="0" max="65535" data-title="Cintura_×_Quadril_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -938,19 +956,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt8" id="tabCelRowMedAnt8_1" itemprop="celMedAnt">Antebraço</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt8" id="tabCelRowMedAnt8_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt8_2" class="form-control tabLabProgCons tabLabRowMedAnt8" id="tabLabRowMedAnt8_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt8 float sevenCharLongNum" id="tabInpRowMedAnt8_2" min="0" max="65535" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt8 float sevenCharLongNum" id="tabInpRowMedAnt8_2" min="0" max="65535" data-title="Antebraço_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt8" id="tabCelRowMedAnt8_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt8_3" class="form-control tabLabProgCons tabLabRowMedAnt8" id="tabLabRowMedAnt8_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt8 float sevenCharLongNum" id="tabInpRowMedAnt8_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt8 float sevenCharLongNum" id="tabInpRowMedAnt8_3" min="0" max="65535" data-title="Antebraço_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt8" id="tabCelRowMedAnt8_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt8_4" class="form-control tabLabProgCons tabLabRowMedAnt8" id="tabLabRowMedAnt8_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt8 float sevenCharLongNum" id="tabInpRowMedAnt8_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt8 float sevenCharLongNum" id="tabInpRowMedAnt8_4" min="0" max="65535" data-title="Antebraço_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -960,19 +978,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt9" id="tabCelRowMedAnt9_1" itemprop="celMedAnt">Braço</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt9" id="tabCelRowMedAnt9_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt9_2" class="form-control tabLabProgCons tabLabRowMedAnt9" id="tabLabRowMedAnt9_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt9 float sevenCharLongNum" id="tabInpRowMedAnt9_2" min="0" max="65535" required  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt9 float sevenCharLongNum" id="tabInpRowMedAnt9_2" min="0" max="65535" data-title="Braço_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt9" id="tabCelRowMedAnt9_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt9_3" class="form-control tabLabProgCons tabLabRowMedAnt9" id="tabLabRowMedAnt9_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt9 float sevenCharLongNum" id="tabInpRowMedAnt9_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt9 float sevenCharLongNum" id="tabInpRowMedAnt9_3" min="0" max="65535" data-title="Braço_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt9" id="tabCelRowMedAnt9_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt9_4" class="form-control tabLabProgCons tabLabRowMedAnt9" id="tabLabRowMedAnt9_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt9 float sevenCharLongNum" id="tabInpRowMedAnt9_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt9 float sevenCharLongNum" id="tabInpRowMedAnt9_4" min="0" max="65535" data-title="Braço_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -982,19 +1000,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt10" id="tabCelRowMedAnt10_1" itemprop="celMedAnt">Coxa</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt10" id="tabCelRowMedAnt10_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt10_2" class="form-control tabLabProgCons tabLabRowMedAnt10" id="tabLabRowMedAnt10_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt10 float sevenCharLongNum" id="tabInpRowMedAnt10_2" min="0" max="65535" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt10 float sevenCharLongNum" id="tabInpRowMedAnt10_2" min="0" max="65535" data-title="Coxa_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt10" id="tabCelRowMedAnt10_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt10_3" class="form-control tabLabProgCons tabLabRowMedAnt10" id="tabLabRowMedAnt10_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt10 float sevenCharLongNum" id="tabInpRowMedAnt10_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt10 float sevenCharLongNum" id="tabInpRowMedAnt10_3" min="0" max="65535" data-title="Coxa_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt10" id="tabCelRowMedAnt10_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt10_4" class="form-control tabLabProgCons tabLabRowMedAnt10" id="tabLabRowMedAnt10_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt10 float sevenCharLongNum" id="tabInpRowMedAnt10_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt10 float sevenCharLongNum" id="tabInpRowMedAnt10_4" min="0" max="65535" data-title="Coxa_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -1004,19 +1022,19 @@
                       <th class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt11" id="tabCelRowMedAnt11_1" itemprop="celMedAnt">Panturrilha</th>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt11" id="tabCelRowMedAnt11_2" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt11_2" class="form-control tabLabProgCons tabLabRowMedAnt11" id="tabLabRowMedAnt11_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt11 float sevenCharLongNum" id="tabInpRowMedAnt11_2" min="0" max="65535" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt11 float sevenCharLongNum" id="tabInpRowMedAnt11_2" min="0" max="65535" data-title="Panturrilha_1_Consulta" required />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt11" id="tabCelRowMedAnt11_3" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt11_3" class="form-control tabLabProgCons tabLabRowMedAnt11" id="tabLabRowMedAnt11_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt11 float sevenCharLongNum" id="tabInpRowMedAnt11_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt11 float sevenCharLongNum" id="tabInpRowMedAnt11_3" min="0" max="65535" data-title="Panturrilha_2_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelMedAnt tabCelRowMedAnt11" id="tabCelRowMedAnt11_4" itemprop="celMedAnt">
                         <label for="tabInpRowMedAnt11_4" class="form-control tabLabProgCons tabLabRowMedAnt11" id="tabLabRowMedAnt11_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt11 float sevenCharLongNum" id="tabInpRowMedAnt11_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgMedAnt tabInpRowMedAnt11 float sevenCharLongNum" id="tabInpRowMedAnt11_4" min="0" max="65535" data-title="Panturrilha_3_Consulta" />
                           <p class="msrProgCons">cm</p>
                         </label>
                       </td>
@@ -1028,7 +1046,7 @@
               <hr />
 
               <div class="spanMain spanMainTabProgCons divLab" id="tabSpanDCut">Protocolo:
-                <select class="form-select selectTabProgCons consInp" id="tabSelectDCutId" name="tabSelectDCutName" required>
+                <select class="form-select selectTabProgCons consInp" id="tabSelectDCutId" name="tabSelectDCutName" data-title="Protocolo_DCut" required>
                   <option value="pollock3" class="opTabProgCons opProtoc" id="opProtocJP3" selected>Jackson/Pollock 3</option>
                   <option value="pollock7" class="opTabProgCons opProtoc" id="opProtocJP7">Jackson/Pollock 7</option>
                 </select>
@@ -1063,19 +1081,19 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut2" id="tabCelRowDCut2_1" itemprop="subescapularStr">Subescapular</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut2" id="tabCelRowDCut2_2" itemprop="subescapularNum">
                         <label for="tabInpRowDCut2_2" id="labInpRowDCut2_2" class="form-control tabLabProgCons tabLabRowDCut2" id="tabLabRowDCut2_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut2 float sevenCharLongNum" id="tabInpRowDCut2_2" min="0" max="65535" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut2 float sevenCharLongNum" id="tabInpRowDCut2_2" min="0" max="65535" data-title="DCut_Subescapular_1_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut2" id="tabCelRowDCut2_3" itemprop="subescapularNum">
                         <label for="tabInpRowDCut2_3" id="labInpRowDCut2_3" class="form-control tabLabProgCons tabLabRowDCut2" id="tabLabRowDCut2_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut2 float sevenCharLongNum" id="tabInpRowDCut2_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut2 float sevenCharLongNum" id="tabInpRowDCut2_3" min="0" max="65535" data-title="DCut_Subescapular_2_Consulta"  />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut2" id="tabCelRowDCut2_4" itemprop="subescapularNum">
                         <label for="tabInpRowDCut2_4" id="labInpRowDCut2_4" class="form-control tabLabProgCons tabLabRowDCut2" id="tabLabRowDCut2_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut2 float sevenCharLongNum" id="tabInpRowDCut2_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut2 float sevenCharLongNum" id="tabInpRowDCut2_4" min="0" max="65535" data-title="DCut_Subescapular_3_Consulta"  />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1085,20 +1103,20 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut3" id="tabCelRowDCut3_1" itemprop="axilarMediaStr">Axilar Média</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut3" id="tabCelRowDCut3_2" itemprop="axilarMediaNum">
                         <label for="tabInpRowDCut3_2" id="labInpRowDCut3_2" class="form-control tabLabProgCons tabLabRowDCut3" id="tabLabRowDCut3_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut3 float sevenCharLongNum" id="tabInpRowDCut3_2" min="0" max="65535" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut3 float sevenCharLongNum" id="tabInpRowDCut3_2" min="0" max="65535" data-title="DCut_Axilar_Med_1_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut3" id="tabCelRowDCut3_3" itemprop="axilarMediaNum">
                         <label for="tabInpRowDCut3_3" id="labInpRowDCut3_3" class="form-control tabLabProgCons tabLabRowDCut3" id="tabLabRowDCut3_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut3 float sevenCharLongNum" id="tabInpRowDCut3_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut3 float sevenCharLongNum" id="tabInpRowDCut3_3" min="0" max="65535" data-title="DCut_Axilar_Med_2_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
   
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut3" id="tabCelRowDCut3_4" itemprop="axilarMediaNum">
                         <label for="tabInpRowDCut3_4" id="labInpRowDCut3_4" class="form-control tabLabProgCons tabLabRowDCut3" id="tabLabRowDCut3_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut3 float sevenCharLongNum" id="tabInpRowDCut3_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut3 float sevenCharLongNum" id="tabInpRowDCut3_4" min="0" max="65535" data-title="DCut_Axilar_Med_3_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1108,19 +1126,19 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut4" id="tabCelRowDCut4_1" itemprop="coxaStr">Coxa</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut4" id="tabCelRowDCut4_2" itemprop="coxaNum">
                         <label for="tabInpRowDCut4_2" id="labInpRowDCut4_2" class="form-control tabLabProgCons tabLabRowDCut4" id="tabLabRowDCut4_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut4 float sevenCharLongNum" id="tabInpRowDCut4_2" min="0" max="65535" value="18" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut4 float sevenCharLongNum" id="tabInpRowDCut4_2" min="0" max="65535" value="18" data-title="DCut_Coxa_1_Consulta" required />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut4" id="tabCelRowDCut4_3" itemprop="coxaNum">
                         <label for="tabInpRowDCut4_3" id="labInpRowDCut4_3" class="form-control tabLabProgCons tabLabRowDCut4" id="tabLabRowDCut4_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut4 float sevenCharLongNum" id="tabInpRowDCut4_3" min="0" max="65535" value="10"/>
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut4 float sevenCharLongNum" id="tabInpRowDCut4_3" min="0" max="65535" value="10" data-title="DCut_Coxa_2_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut4" id="tabCelRowDCut4_4" itemprop="coxaNum">
                         <label for="tabInpRowDCut4_4" id="labInpRowDCut4_2" class="form-control tabLabProgCons tabLabRowDCut4" id="tabLabRowDCut4_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut4 float sevenCharLongNum" id="tabInpRowDCut4_4" min="0" max="65535" value="40" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut4 float sevenCharLongNum" id="tabInpRowDCut4_4" min="0" max="65535" value="40" data-title="DCut_Coxa_3_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1130,19 +1148,19 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut5" id="tabCelRowDCut5_1" itemprop="triciptalStr">Tríciptal</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut5" id="tabCelRowDCut5_2" itemprop="triciptalNum">
                         <label for="tabInpRowDCut5_2" id="labInpRowDCut5_2" class="form-control tabLabProgCons tabLabRowDCut5" id="tabLabRowDCut5_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut5 float sevenCharLongNum" id="tabInpRowDCut5_2" min="0" max="65535" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut5 float sevenCharLongNum" id="tabInpRowDCut5_2" min="0" max="65535" data-title="DCut_Triciptal_1_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut5" id="tabCelRowDCut5_3" itemprop="triciptalNum">
                         <label for="tabInpRowDCut5_3" id="labInpRowDCut5_3" class="form-control tabLabProgCons tabLabRowDCut5" id="tabLabRowDCut5_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut5 float sevenCharLongNum" id="tabInpRowDCut5_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut5 float sevenCharLongNum" id="tabInpRowDCut5_3" min="0" max="65535" data-title="DCut_Triciptal_2_Consulta"  />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut5" id="tabCelRowDCut5_4" itemprop="triciptalNum">
                         <label for="tabInpRowDCut5_4" id="labInpRowDCut5_4" class="form-control tabLabProgCons tabLabRowDCut5" id="tabLabRowDCut5_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut5 float sevenCharLongNum" id="tabInpRowDCut5_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut5 float sevenCharLongNum" id="tabInpRowDCut5_4" min="0" max="65535" data-title="DCut_Triciptal_3_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1152,19 +1170,19 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut6" id="tabCelRowDCut6_1" itemprop="suprailiacaStr">Suprailíaca</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut6" id="tabCelRowDCut6_2" itemprop="suprailiacaNum">
                         <label for="tabInpRowDCut6_2" id="labInpRowDCut6_2" class="form-control tabLabProgCons tabLabRowDCut6" id="tabLabRowDCut6_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut6 float sevenCharLongNum" id="tabInpRowDCut6_2" min="0" max="65535" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut6 float sevenCharLongNum" id="tabInpRowDCut6_2" min="0" max="65535" data-title="DCut_Suprailiaca_1_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut6" id="tabCelRowDCut6_3" itemprop="suprailiacaNum">
                         <label for="tabInpRowDCut6_3" id="labInpRowDCut6_3" class="form-control tabLabProgCons tabLabRowDCut6" id="tabLabRowDCut6_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut6 float sevenCharLongNum" id="tabInpRowDCut6_3" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut6 float sevenCharLongNum" id="tabInpRowDCut6_3" min="0" max="65535" data-title="DCut_Suprailiaca_2_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut6" id="tabCelRowDCut6_4" itemprop="suprailiacaNum">
                         <label for="tabInpRowDCut6_4" id="labInpRowDCut6_4" class="form-control tabLabProgCons tabLabRowDCut6" id="tabLabRowDCut6_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut6 float sevenCharLongNum" id="tabInpRowDCut6_4" min="0" max="65535"  />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut6 float sevenCharLongNum" id="tabInpRowDCut6_4" min="0" max="65535" data-title="DCut_Suprailiaca_3_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1174,19 +1192,19 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut7" id="tabCelRowDCut7_1" itemprop="peitoralStr">Peitoral</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut7" id="tabCelRowDCut7_2" itemprop="peitoralNum">
                         <label for="tabInpRowDCut7_2" id="labInpRowDCut7_2" class="form-control tabLabProgCons tabLabRowDCut7" id="tabLabRowDCut7_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut7 float sevenCharLongNum" id="tabInpRowDCut7_2" min="0" max="65535" value="18" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut7 float sevenCharLongNum" id="tabInpRowDCut7_2" min="0" max="65535" value="18" data-title="DCut_Peitoral_1_Consulta" required />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut7" id="tabCelRowDCut7_3" itemprop="peitoralNum">
                         <label for="tabInpRowDCut7_3" id="labInpRowDCut7_3" class="form-control tabLabProgCons tabLabRowDCut7" id="tabLabRowDCut7_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut7 float sevenCharLongNum" id="tabInpRowDCut7_3" min="0" max="65535" value="10" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut7 float sevenCharLongNum" id="tabInpRowDCut7_3" min="0" max="65535" value="10" data-title="DCut_Peitoral_2_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut7" id="tabCelRowDCut7_4" itemprop="peitoralNum">
                         <label for="tabInpRowDCut7_4" id="labInpRowDCut7_4" class="form-control tabLabProgCons tabLabRowDCut7" id="tabLabRowDCut7_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut7 float sevenCharLongNum" id="tabInpRowDCut7_4" min="0" max="65535" value="40" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut7 float sevenCharLongNum" id="tabInpRowDCut7_4" min="0" max="65535" value="40" data-title="DCut_Peitoral_3_Consulta" />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1196,19 +1214,19 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut8" id="tabCelRowDCut8_1" itemprop="abdominalStr">Abdominal</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut8" id="tabCelRowDCut8_2" itemprop="abdominalNum">
                         <label for="tabInpRowDCut8_2" id="labInpRowDCut8_2" class="form-control tabLabProgCons tabLabRowDCut8" id="tabLabRowDCut8_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut8 float sevenCharLongNum" id="tabInpRowDCut8_2" min="0" max="65535" value="18" required />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut8 float sevenCharLongNum" id="tabInpRowDCut8_2" min="0" max="65535" value="18" data-title="DCut_Abdominal_1_Consulta" required />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut8" id="tabCelRowDCut8_3" itemprop="abdominalNum">
                         <label for="tabInpRowDCut8_3" id="labInpRowDCut8_3" class="form-control tabLabProgCons tabLabRowDCut8" id="tabLabRowDCut8_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut8 float sevenCharLongNum" id="tabInpRowDCut8_3" min="0" max="65535" value="10" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut8 float sevenCharLongNum" id="tabInpRowDCut8_3" min="0" max="65535" value="10" data-title="DCut_Abdominal_2_Consulta"  />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut8" id="tabCelRowDCut8_4" itemprop="abdominalNum">
                         <label for="tabInpRowDCut8_4" id="labInpRowDCut8_4" class="form-control tabLabProgCons tabLabRowDCut8" id="tabLabRowDCut8_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut8 float sevenCharLongNum" id="tabInpRowDCut8_4" min="0" max="65535" value="40" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut8 float sevenCharLongNum" id="tabInpRowDCut8_4" min="0" max="65535" value="40" data-title="DCut_Abdominal_3_Consulta"  />
                           <p class="msrProgCons">mm</p>
                         </label>
                       </td>
@@ -1218,21 +1236,21 @@
                       <th class="tabCelProgCons tabCelDCut tabCelRowDCut9" id="tabCelRowDCut9_1" itemprop="somaStr">Soma</th>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut9" id="tabCelRowDCut9_2" itemprop="somaNum">
                         <label for="tabInpRowDCut9_2" id="labInpRowDCut9_2" class="form-control tabLabProgCons tabLabRowDCut9" id="tabLabRowDCut9_2">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut9 inpSumDCut float sevenCharLongNum" id="tabInpRowDCut9_2" min="0" max="65535" value="60" required/>
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut9 inpSumDCut float sevenCharLongNum" id="tabInpRowDCut9_2" min="0" max="65535" value="60" data-title="DCut_Soma_1_Consulta" required/>
                           <p class="msrProgCons sumMsr">mm</p>
                           <button type="button" id="sumDCBtn9_2" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnSum tabBtnRowDCut9">Calcular</button>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut9" id="tabCelRowDCut9_2" itemprop="somaNum">
                         <label for="tabInpRowDCut9_3" id="labInpRowDCut9_3" class="form-control tabLabProgCons tabLabRowDCut9" id="tabLabRowDCut9_3">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut9 inpSumDCut float sevenCharLongNum" id="tabInpRowDCut9_3" min="0" max="65535" value="40" />
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut9 inpSumDCut float sevenCharLongNum" id="tabInpRowDCut9_3" min="0" max="65535" value="40" data-title="DCut_Soma_2_Consulta" />
                           <p class="msrProgCons sumMsr">mm</p>
                           <button type="button" id="sumDCBtn9_3" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnSum tabBtnRowDCut9">Calcular</button>
                         </label>
                       </td>
                       <td class="tabCelProgCons tabCelDCut tabCelRowDCut9" id="tabCelRowDCut9_2" itemprop="somaNum">
                         <label for="tabInpRowDCut9_4" id="labInpRowDCut9_4" class="form-control tabLabProgCons tabLabRowDCut9" id="tabLabRowDCut9_4">
-                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut9 inpSumDCut float sevenCharLongNum" id="tabInpRowDCut9_4" min="0" max="65535" value="150"/>
+                          <input type="number" class="form-control tabInpProg tabInpProgSumDCut tabInpRowDCut9 inpSumDCut float sevenCharLongNum" id="tabInpRowDCut9_4" min="0" max="65535" value="150" data-title="DCut_Soma_3_Consulta" />
                           <p class="msrProgCons sumMsr">mm</p>
                           <button type="button" id="sumDCBtn9_4" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnSum tabBtnRowDCut9">Calcular</button>
                         </label>
@@ -1269,7 +1287,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc2">
                           <div class="flexDiv flexDivTab">
                             <label for="inpImc1Cel2_2" id="labImcCel2_2" class="form-control tabLabProgCons labInd labImc">
-                              <input type="number" name="tabInpProgDC2_2" id="inpImc1Cel2_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpImc inpCol2 sevenCharLongNum" min="0" required/>
+                              <input type="number" name="tabInpProgDC2_2" id="inpImc1Cel2_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpImc inpCol2 sevenCharLongNum" min="0" data-title="IMC_1_Consulta" required/>
                               <p class="msrProgCons indMsr">kg/m²</p>
                             </label>
                             <button type="button" id="btnImc1Cel2_2" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnImc tabBtnCol2">Calcular</button>
@@ -1286,7 +1304,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc2">
                         <div class="flexDiv flexDivTab">
                           <label for="inpImc2Cel2_3" id="labImc2Cel2_3" class="form-control tabLabProgCons labInd labImc">
-                            <input type="number" name="tabInpProgDC2_3" id="inpImc2Cel2_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpImc inpCol3 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC2_3" id="inpImc2Cel2_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpImc inpCol3 sevenCharLongNum" min="0" data-title="IMC_2_Consulta" />
                             <p class="msrProgCons indMsr">kg/m²</p>
                           </label>
                           <button type="button" id="btnImc1Cel2_3" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnImc tabBtnCol3">Calcular</button>
@@ -1303,7 +1321,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc2">
                         <div class="flexDiv flexDivTab">
                           <label for="inpImc3Cel2_4" id="labImc3Cel2_4" class="form-control tabLabProgCons labInd labImc">
-                            <input type="number" name="tabInpProgDC2_4" id="inpImc3Cel2_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpImc inpCol4 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC2_4" id="inpImc3Cel2_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpImc inpCol4 sevenCharLongNum" min="0" data-title="IMC_3_Consulta" />
                             <p class="msrProgCons indMsr">kg/m²</p>
                           </label>
                           <button type="button" id="btnImc3Cel2_4" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnImc tabBtnCol4">Calcular</button>
@@ -1323,7 +1341,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc3">
                         <div class="flexDiv flexDivTab">
                           <label for="inpMlg1Cel3_2" id="labMlg1Cel3_2" class="form-control tabLabProgCons labInd labMlg">
-                            <input type="number" name="tabInpProgDC3_2" id="inpMlg1Cel3_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpMlg inpCol2 sevenCharLongNum" min="0" max="100" required/>
+                            <input type="number" name="tabInpProgDC3_2" id="inpMlg1Cel3_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpMlg inpCol2 sevenCharLongNum" min="0" max="100" data-title="MLG_1_Consulta" required/>
                             <p class="msrProgCons indMsr">%</p>
                           </label>
                           <button type="button" id="btnMlg1Cel3_2" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnMlg tabBtnCol2">Calcular</button>
@@ -1340,7 +1358,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc3">
                         <div class="flexDiv flexDivTab">
                           <label for="inpMlg2Cel3_3" id="labMlg2Cel3_3" class="form-control tabLabProgCons labInd labMlg">
-                            <input type="number" name="tabInpProgDC3_3" id="inpMlg2Cel3_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpMlg inpCol3 sevenCharLongNum" min="0" max="100" required/>
+                            <input type="number" name="tabInpProgDC3_3" id="inpMlg2Cel3_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpMlg inpCol3 sevenCharLongNum" min="0" max="100" data-title="MLG_2_Consulta" />
                             <p class="msrProgCons indMsr">%</p>
                           </label>
                           <button type="button" id="btnMlg2Cel3_3" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnMlg tabBtnCol3">Calcular</button>
@@ -1357,7 +1375,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc3">
                         <div class="flexDiv flexDivTab">
                           <label for="inpMlg3Cel3_4" id="labMlg3Cel3_4" class="form-control tabLabProgCons labInd labMlg">
-                            <input type="number" name="tabInpProgDC3_4" id="inpMlg3Cel3_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpMlg inpCol4 sevenCharLongNum" min="0" max="100" required/>
+                            <input type="number" name="tabInpProgDC3_4" id="inpMlg3Cel3_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpMlg inpCol4 sevenCharLongNum" min="0" max="100"  data-title="MLG_3_Consulta" />
                             <p class="msrProgCons indMsr">%</p>
                           </label>
                           <button type="button" id="btnMlg1Cel3_4" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnMlg tabBtnCol4">Calcular</button>
@@ -1378,7 +1396,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc4">
                         <div class="flexDiv flexDivTab">
                           <label for="inpPgc1Cel4_2" id="labPgc1Cel4_2" class="form-control tabLabProgCons labInd labPgc">
-                            <input type="number" name="tabInpProgDC4_2" id="inpPgc1Cel4_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpPgc inpCol2 sevenCharLongNum" min="0" max="100" required/>
+                            <input type="number" name="tabInpProgDC4_2" id="inpPgc1Cel4_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpPgc inpCol2 sevenCharLongNum" min="0" max="100" data-title="PGC_1_Consulta" required/>
                             <p class="msrProgCons indMsr">%</p>
                           </label>
                           <button type="button" id="btnPgc1Cel4_2" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnPgc tabBtnCol2">Calcular</button>
@@ -1402,7 +1420,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc4">
                         <div class="flexDiv flexDivTab">
                           <label for="inpPgc2Cel4_3" id="labPgc2Cel4_3" class="form-control tabLabProgCons labInd labPgc">
-                            <input type="number" name="tabInpProgDC4_3" id="inpPgc2Cel4_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpPgc inpCol3 sevenCharLongNum" min="0" max="100" required/>
+                            <input type="number" name="tabInpProgDC4_3" id="inpPgc2Cel4_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpPgc inpCol3 sevenCharLongNum" min="0" max="100" data-title="PGC_2_Consulta" />
                             <p class="msrProgCons indMsr">%</p>
                           </label>
                           <button type="button" id="btnPgc2Cel4_3" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnPgc tabBtnCol3">Calcular</button>
@@ -1426,7 +1444,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc4">
                         <div class="flexDiv flexDivTab">
                           <label for="inpPgc3Cel4_4" id="labPgc3Cel4_4" class="form-control tabLabProgCons labInd labPgc">
-                            <input type="number" name="tabInpProgDC4_4" id="inpPgc3Cel4_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpPgc inpCol4 sevenCharLongNum" min="0" max="100" required/>
+                            <input type="number" name="tabInpProgDC4_4" id="inpPgc3Cel4_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpPgc inpCol4 sevenCharLongNum" min="0" max="100" data-title="PGC_3_Consulta" />
                             <p class="msrProgCons indMsr">%</p>
                           </label>
                           <button type="button" id="btnPgc1Cel4_4" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnPgc tabBtnCol4">Calcular</button>
@@ -1454,7 +1472,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc5">
                         <div class="flexDiv flexDivTab">
                           <label for="inpTmb1Cel5_2" id="labTmb1Cel5_2" class="form-control tabLabProgCons labInd labTmb">
-                            <input type="number" name="tabInpProgDC5_2" id="inpTmb1Cel5_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpTmb inpCol2 sevenCharLongNum" min="0" required/>
+                            <input type="number" name="tabInpProgDC5_2" id="inpTmb1Cel5_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpTmb inpCol2 sevenCharLongNum" min="0" data-title="TMB_1_Consulta" required/>
                             <p class="msrProgCons indMsr">kcal</p>
                           </label>
                           <button type="button" id="btnTmb1Cel5_2" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnTmb tabBtnCol2">Calcular</button>
@@ -1472,7 +1490,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc5">
                         <div class="flexDiv flexDivTab">
                           <label for="inpTmb2Cel5_3" id="labTmb1Cel5_3" class="form-control tabLabProgCons labInd labTmb">
-                            <input type="number" name="tabInpProgDC5_3" id="inpTmb2Cel5_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpTmb inpCol3 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC5_3" id="inpTmb2Cel5_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpTmb inpCol3 sevenCharLongNum" min="0" data-title="TMB_2_Consulta" />
                             <p class="msrProgCons indMsr">kcal</p>
                           </label>
                           <button type="button" id="btnTmb2Cel5_3" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnTmb tabBtnCol3">Calcular</button>
@@ -1489,7 +1507,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc5">
                         <div class="flexDiv flexDivTab">
                           <label for="inpTmb3Cel5_4" id="labTmb1Cel5_4" class="form-control tabLabProgCons labInd labTmb">
-                            <input type="number" name="tabInpProgDC5_4" id="inpTmb3Cel5_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpTmb inpCol4 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC5_4" id="inpTmb3Cel5_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpTmb inpCol4 sevenCharLongNum" min="0" data-title="TMB_3_Consulta" />
                             <p class="msrProgCons indMsr">kcal</p>
                           </label>
                           <button type="button" id="btnTmb3Cel5_4" class="btn btn-secondary tabBtn tabBtnProgCons tabBtnInd tabBtnTmb tabBtnCol4">Calcular</button>
@@ -1510,7 +1528,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc6">
                         <div class="flexDiv flexDivTab">
                           <label for="inpGet1Cel6_2" id="labGet1Cel6_2" class="form-control tabLabProgCons labInd labGet">
-                            <input type="number" name="tabInpProgDC6_2" id="inpGet1Cel6_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpGet inpCol2 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC6_2" id="inpGet1Cel6_2" class="form-control tabInpProg tabInpProgIndPerc inpInd inpGet inpCol2 sevenCharLongNum" min="0" data-title="GET_1_Consulta" />
                             <p class="msrProgCons indMsr">kcal</p>
                           </label>
                           <button type="button" id="btnGet1Cel6_2" class="btn btn-secondary tabBtn tabBtnGet tabBtnInd tabBtnGet tabBtnCol2">Calcular</button>
@@ -1527,7 +1545,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc6">
                         <div class="flexDiv flexDivTab">
                           <label for="inpGet2Cel6_3" id="labGet1Cel6_3" class="form-control tabLabProgCons labInd labGet">
-                            <input type="number" name="tabInpProgDC6_3" id="inpGet2Cel6_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpGet inpCol3 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC6_3" id="inpGet2Cel6_3" class="form-control tabInpProg tabInpProgIndPerc inpInd inpGet inpCol3 sevenCharLongNum" min="0" data-title="GET_2_Consulta" />
                             <p class="msrProgCons indMsr">kcal</p>
                           </label>
                           <button type="button" id="btnGet2Cel6_3" class="btn btn-secondary tabBtn tabBtnGet tabBtnInd tabBtnGet tabBtnCol3">Calcular</button>
@@ -1544,7 +1562,7 @@
                       <td class="tabCelProgCons tabCelIndPerc tabCelRowIndPerc6">
                         <div class="flexDiv flexDivTab">
                           <label for="inpGet3Cel6_4" id="labGet1Cel6_4" class="form-control tabLabProgCons labInd labGet">
-                            <input type="number" name="tabInpProgDC6_4" id="inpGet3Cel6_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpGet inpCol4 sevenCharLongNum" min="0" />
+                            <input type="number" name="tabInpProgDC6_4" id="inpGet3Cel6_4" class="form-control tabInpProg tabInpProgIndPerc inpInd inpGet inpCol4 sevenCharLongNum" min="0" data-title="GET_3_Consulta" />
                             <p class="msrProgCons indMsr">kcal</p>
                           </label>
                           <button type="button" id="btnGet3Cel6_4" class="btn btn-secondary tabBtn tabBtnGet tabBtnInd tabBtnGet tabBtnCol2">Calcular</button>
@@ -1571,11 +1589,11 @@
             <section class="sectionMain sectionConfirm" id="sectConfirmCheck">
               <blockquote class="declr" id="declrEnd">"DECLARO QUE CONCORDO COM AS AVALIAÇÕES DESCRITAS ACIMA"
                 <label for="confirmId" class="labConfirm"></label>
-                <input type="checkbox" name="confirmName" id="confirmId" data-title="concordancia" required />
+                <input type="checkbox" name="confirmName" id="confirmId" data-title="Concordancia" required />
               </blockquote>
               <div class="divMain" id="divConfirm">
                 <span class="spanConfirm "id="spanConfirm1">
-                  <cite contenteditable="true" id="citeNameId" data-title="nome_citado">Insira Seu Nome Aqui</cite>
+                  <cite contenteditable="true" id="citeNameId" data-title="Nome_citado">Insira Seu Nome Aqui</cite>
                   <button type="button" class="biBtn tipBtn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-exclamation-fill" viewBox="0 0 16 16">
                       <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
@@ -1606,7 +1624,7 @@
                       id="confirmLocId"
                       class="inpConfirm form-control"
                       value="Rio de Janeiro, Rio de Janeiro"
-                      data-title="assinatura_local"
+                      data-title="Assinatura_local"
                       required
                     />
                   </label>
@@ -1618,7 +1636,7 @@
                       name="confirmDatName"
                       id="confirmDatId"
                       class="inpConfirm inpDate form-control"
-                      data-title="assinatura_data"
+                      data-title="Assinatura_data"
                       required
                     />
                     <button type="button" class="datBtn confirmBtn btn btn-secondary" id="confirmDatBtn">Usar data atual</button>
@@ -1635,7 +1653,7 @@
                       name="confirmAstName"
                       id="inpAstConfirmId"
                       class="inpAst form-control"
-                      data-title="assinatura_paciente"
+                      data-title="Assinatura_paciente"
                     />
                     <button type="button" class="astDigtBtn autocorrect confirmBtn btn btn-secondary" 
                     id="confirmAstDigtBtn">Usar Assinatura Digital</button>
