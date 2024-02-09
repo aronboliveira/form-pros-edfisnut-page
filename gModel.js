@@ -967,14 +967,14 @@ export function showGenFisAlin(genFisAlin) {
     if (genFisAlin instanceof HTMLSelectElement ||
         genFisAlin instanceof HTMLInputElement ||
         (genFisAlin instanceof HTMLTextAreaElement &&
-            genFisAlin.closest(".spanFsAnamG"))) {
-        if (genFisAlin.closest(".spanFsAnamG")?.hidden === true) {
-            GlobalStyle.fadeElement(genFisAlin.closest(".spanFsAnamG"), "0");
+            genFisAlin.closest(".genSpan"))) {
+        if (genFisAlin.closest(".genSpan")?.hidden === true) {
+            GlobalStyle.fadeElement(genFisAlin.closest(".genSpan"), "0");
             setTimeout(() => {
                 console.log("shown");
-                genFisAlin.closest(".spanFsAnamG")?.removeAttribute("hidden");
+                genFisAlin.closest(".genSpan")?.removeAttribute("hidden");
                 setTimeout(() => {
-                    GlobalStyle.fadeElement(genFisAlin.closest(".spanFsAnamG"), "1");
+                    GlobalStyle.fadeElement(genFisAlin.closest(".genSpan"), "1");
                 }, 250);
             }, 250);
         }
@@ -988,12 +988,12 @@ export function hideGenFisAlin(genFisAlin) {
     if (genFisAlin instanceof HTMLSelectElement ||
         genFisAlin instanceof HTMLInputElement ||
         (genFisAlin instanceof HTMLTextAreaElement &&
-            genFisAlin.closest(".spanFsAnamG"))) {
-        if (genFisAlin.closest(".spanFsAnamG")?.hidden === false) {
+            genFisAlin.closest(".genSpan"))) {
+        if (genFisAlin.closest(".genSpan")?.hidden === false) {
             setTimeout(() => {
-                GlobalStyle.fadeElement(genFisAlin.closest(".spanFsAnamG"), "0");
+                GlobalStyle.fadeElement(genFisAlin.closest(".genSpan"), "0");
                 setTimeout(() => {
-                    genFisAlin.closest(".spanFsAnamG")?.setAttribute("hidden", "");
+                    genFisAlin.closest(".genSpan")?.setAttribute("hidden", "");
                 }, 500);
             }, 250);
         }
@@ -1007,14 +1007,14 @@ export function showStgTransHorm(genTrans) {
     if (genTrans instanceof HTMLSelectElement ||
         genTrans instanceof HTMLInputElement ||
         (genTrans instanceof HTMLTextAreaElement &&
-            genTrans.closest(".spanFsAnamG"))) {
-        if (genTrans.closest(".spanFsAnamG")?.hidden === true) {
-            GlobalStyle.fadeElement(genTrans.closest(".spanFsAnamG"), "0");
+            genTrans.closest(".genSpan"))) {
+        if (genTrans.closest(".genSpan")?.hidden === true) {
+            GlobalStyle.fadeElement(genTrans.closest(".genSpan"), "0");
             console.log("shown");
             setTimeout(() => {
-                genTrans.closest(".spanFsAnamG")?.removeAttribute("hidden");
+                genTrans.closest(".genSpan")?.removeAttribute("hidden");
                 setTimeout(() => {
-                    GlobalStyle.fadeElement(genTrans.closest(".spanFsAnamG"), "1");
+                    GlobalStyle.fadeElement(genTrans.closest(".genSpan"), "1");
                 }, 250);
             }, 250);
         }
@@ -1028,12 +1028,12 @@ export function hideStgTransHorm(genTrans) {
     if (genTrans instanceof HTMLSelectElement ||
         genTrans instanceof HTMLInputElement ||
         (genTrans instanceof HTMLTextAreaElement &&
-            genTrans.closest(".spanFsAnamG"))) {
-        if (genTrans.closest(".spanFsAnamG")?.hidden === false) {
+            genTrans.closest(".genSpan"))) {
+        if (genTrans.closest(".genSpan")?.hidden === false) {
             setTimeout(() => {
-                GlobalStyle.fadeElement(genTrans.closest(".spanFsAnamG"), "0");
+                GlobalStyle.fadeElement(genTrans.closest(".genSpan"), "0");
                 setTimeout(() => {
-                    genTrans.closest(".spanFsAnamG")?.setAttribute("hidden", "");
+                    genTrans.closest(".genSpan")?.setAttribute("hidden", "");
                 }, 500);
             }, 250);
         }
