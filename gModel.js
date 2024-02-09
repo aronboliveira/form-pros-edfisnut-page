@@ -971,6 +971,7 @@ export function showGenFisAlin(genFisAlin) {
         if (genFisAlin.closest(".spanFsAnamG")?.hidden === true) {
             GlobalStyle.fadeElement(genFisAlin.closest(".spanFsAnamG"), "0");
             setTimeout(() => {
+                console.log("shown");
                 genFisAlin.closest(".spanFsAnamG")?.removeAttribute("hidden");
                 setTimeout(() => {
                     GlobalStyle.fadeElement(genFisAlin.closest(".spanFsAnamG"), "1");
@@ -1009,6 +1010,7 @@ export function showStgTransHorm(genTrans) {
             genTrans.closest(".spanFsAnamG"))) {
         if (genTrans.closest(".spanFsAnamG")?.hidden === true) {
             GlobalStyle.fadeElement(genTrans.closest(".spanFsAnamG"), "0");
+            console.log("shown");
             setTimeout(() => {
                 genTrans.closest(".spanFsAnamG")?.removeAttribute("hidden");
                 setTimeout(() => {
